@@ -1,9 +1,0 @@
-= simple_form_for(@unit) do |f|
-  .row-fluid
-    .span6
-      = f.input :name, :label => 'Nombre', :input_html => {:size => 30}
-    .span6
-      = f.input :symbol, :label => 'Unidad', :input_html => {:size => 12}
-
-  .form-action
-    = f.submit 'Salvar', class: 'btn btn-success b'

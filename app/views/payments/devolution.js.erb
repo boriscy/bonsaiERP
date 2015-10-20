@@ -1,3 +1,0 @@
-// javascript
-$('#devolutions').html("<%= escape_javascript(render("/payments/devolutions", :transaction => @transaction, :presenter => @presenter) ) %>").mark();
-$('#balance').html("<%= @transaction.currency_symbol %> <%= ntc @transaction.balance %>")

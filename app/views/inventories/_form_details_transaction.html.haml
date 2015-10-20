@@ -1,9 +1,0 @@
-= f.simple_fields_for :inventory_operation_details do |fd|
-  %tr.item
-    %td
-      = fd.input :item_id, :as => :hidden
-      = fd.object.item
-    %td= fd.input :quantity, :label => false, :input_html => { :size => 8, :class => 'quantity', :type => 'decimal' }
-    %td.cur= f.object.delivered_quantity(fd.object.item_id)
-    %td.cur.inventory= ntc stocks[fd.object.item_id][:quantity]
-    %td
